@@ -1,0 +1,118 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Picture Gallery</title>
+  <style>
+    /* General styles */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    /* Navigation bar */
+    nav {
+      background-color: #333;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+    }
+
+    nav .logo {
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 1em;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #00bcd4;
+    }
+
+    /* Gallery grid */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+      padding: 40px;
+    }
+
+    .gallery a {
+      text-decoration: none;
+      color: #333;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 30px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="logo">My Gallery</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="gallery.html">Pictures</a></li>
+      <li><a href="about.html">place your order</a></li>
+      
+    </ul>
+  </nav>
+
+  <h1>Beautiful Moments</h1>
+
+  <!-- Gallery Section -->
+  <div class="gallery">
+    
+<a href="art.jpg" target="_self">
+  <img src="art.pg" alt="Photo 1">
+</a>
+
+<a href="bea.jpg" target="_self">
+  <img src="bea.jpg" alt="Photo 2">
+</a>
+<a href="woman.pg" target="_self">
+  <img src="woman.pg" alt="Photo 3">
+</a>
+
+  </div>
+
+</body>
+</html>
